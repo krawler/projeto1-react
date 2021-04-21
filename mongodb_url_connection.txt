@@ -1,0 +1,1 @@
+mongodb+srv://root:4g5b84k4@cluster0.tqq5x.mongodb.net/strapi-api?retryWrites=true&w=majority
