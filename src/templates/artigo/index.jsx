@@ -5,6 +5,7 @@ import { loadPosts } from '../../components/ApiCli';
 import { Posts } from '../../components/Posts';
 import { Button } from '../../components/Button';
 import { TextInput } from '../../components/TextInput';
+import { Wrapper } from './styles';
 
 class Home extends Component {
 
@@ -47,7 +48,7 @@ class Home extends Component {
 
   handleChange = (e) => {
     const { value } = e.target;
-   // this.state({searchValue: value});
+    this.state({searchValue: value});
   }
 
   render(){    
@@ -67,6 +68,10 @@ class Home extends Component {
       <div className="search-container">
         <TextInput searchValue={searchValue} handleChange={this.handleChange} />
       </div>
+
+      <Wrapper background="pink">
+       <h1>Hello</h1>
+      </Wrapper>
       
         {filteredPosts.length > 0 &&(
           <Posts posts={posts} />
